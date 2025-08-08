@@ -1,5 +1,4 @@
 # AI-Powered-Attrition-Prediction-System
-# 🤖 AI-Powered Attrition Prediction System
 
 A complete mini-project that uses machine learning to predict employee attrition (whether an employee will leave the company), built as part of an AI internship technical task.
 
