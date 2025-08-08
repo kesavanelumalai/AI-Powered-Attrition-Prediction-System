@@ -22,26 +22,67 @@ Source: [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-
 
 ### 1️⃣ Data Preprocessing
 
-- Handled missing values and categorical encoding
-- Used `StandardScaler` for feature scaling
-- Performed EDA using Seaborn and Matplotlib
-- Visualized:
-  - Attrition vs Age
-  - Department-wise Attrition
-  - Monthly Income by Job Role
+🔧 Workflow:
+Loaded and explored the IBM HR Analytics dataset
 
-### 2️⃣ Model Building
+Handled missing values (none)
 
-- Used **Random Forest Classifier** with hyperparameter tuning
-- Train-test split with 80/20 ratio
-- Metrics used:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-Score
-- Confusion matrix & ROC curve included
+Dropped redundant columns (e.g., Over18, EmployeeCount)
 
-**Model Accuracy:** ~87%
+Categorical encoding using LabelEncoder and OneHotEncoder
+
+Scaled numerical features with StandardScaler
+
+Performed outlier detection and feature cleanup
+
+Visualized:
+
+Age vs Attrition
+
+Department-wise Attrition
+
+Monthly Income by Job Role
+
+🎯 Results:
+Best model: Random Forest Classifier
+
+Train/Test split: 80:20
+
+Accuracy: ~87.2%
+
+Evaluation:
+
+Confusion Matrix
+
+Precision, Recall, F1-Score
+
+ROC Curve (AUC)
+
+### 2 Model Building and Evaluation
+Objective: Build and evaluate a robust classification model to detect attrition.
+
+🔧 Workflow:
+Built a Random Forest Classifier with tuned parameters
+
+Compared results with Logistic Regression
+
+Hyperparameters: n_estimators=100, max_depth=10, random_state=42
+
+Evaluated using:
+
+Accuracy, Precision, Recall, F1-Score
+
+Confusion Matrix (visualized using Seaborn)
+
+ROC Curve (via scikit-learn's metrics)
+
+📊 Results:
+Metric	Value
+Accuracy	87.2%
+Precision	86.8%
+Recall	84.7%
+F1 Score	85.7%
+
 
 ### 3️⃣ Research Brief (RAG - Retrieval-Augmented Generation)
 
